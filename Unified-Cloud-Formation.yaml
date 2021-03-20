@@ -112,10 +112,10 @@ Resources:
               YOUR_PASSWORD=${VPNPassword}
             - |
               #VPN 1 - L2TP IPSEC Server
-              wget https://git.io/vpnsetup -O vpnsetup.sh && sudo \
+              wget https://git.io/vpnsetup -O vpn.sh && sudo \
               VPN_IPSEC_PSK=$YOUR_IPSEC_PSK \
               VPN_USER=$YOUR_USERNAME \
-              VPN_PASSWORD=$YOUR_PASSWORD sh vpnsetup.sh
+              VPN_PASSWORD=$YOUR_PASSWORD sh vpn.sh
 
               #VPN 2 - Setup PPTP Server
               apt-get install pptpd -y
